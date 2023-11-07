@@ -1,0 +1,612 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gorditas-regular', sans-serif;  
+}
+
+
+/* navigation bar*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../img/pexels-luis-quintero-2774556.png);
+    background-color: #161735;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+nav{
+    display: flex;
+    padding: 3% 10.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 22px;
+    position: relative;
+}
+.nav-links ul>li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; 
+    font-family: 'gorditas-regular', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.nav-links ul>li a:hover{
+   text-decoration: underline;
+   transition: 0.3s ease;
+   color: #37A2DB;
+}
+
+  
+.signup{
+    text-align: right;
+    font-family: 'gorditas-regular', sans-serif;
+}
+.signup ul li{
+   list-style: none;
+   display: inline-block;
+   font-family: 'gorditas-regular', sans-serif;
+}
+.signup ul>li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'gorditas-regular', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+  
+.signup ul>li:last-child {
+    margin-left: 50px;
+}
+
+
+button{
+    background-color: #37A2DB;
+    font-size: 18px;
+    font-family: 'gorditas-regular', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 29px;
+    border: 0;
+    border-radius: 31px;
+    opacity: 100%;
+}
+
+
+
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+
+   #checkbox_toggle:checked ~ .overlay{
+    visibility: visible;
+   opacity: 0.4;
+ }
+
+
+ .container {
+    text-align:left;
+    padding: 7% 20%;;
+ }
+
+ .container img{
+    width: 40%;
+    height: auto;
+ }
+ .container p{
+    font-size: 40px;
+    color: #FFFFFF;  
+    padding-top: 2%; 
+ }
+
+.child{
+    display: flex;
+    width: 41%;
+    height: 70%;
+    justify-content: space-between;
+     padding-top: 3%;
+     padding-bottom: 2%;
+}
+.child-item ul li{
+   list-style: none;
+    color: #FFFFFF;
+}
+.child-item ul li:first-child{
+    font-size: 22px;
+    padding-bottom: 4%;
+ }
+ .child-item ul li:nth-child(2){
+    font-size: 17px;
+   opacity: 0.7;
+ }
+ .child-item ul li:nth-child(3){
+    font-size: 17px;
+   opacity: 0.7;
+ }
+
+.s{
+    color: #FFFFFF;
+    font-family: 'gorditas-regular', sans-serif;
+    text-align:left;
+    width: 60%;
+    margin: auto;
+}
+.s hr{
+    width: 30%;
+    opacity: 0.7;
+}
+
+.mouse {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.bi{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 28px;
+    position: absolute;
+    top: 40%;
+    left: 94%;
+} 
+ 
+
+
+/* Small mobile devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+            background-image: url(img/Meetup\ Header-UI\ UX\ Thinkthech.png);
+            background-color: #161735;
+            background-position: center right;
+            background-size: auto;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .menu { 
+            display:none;
+            position: absolute;
+            background-color:#4d4e79;
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 16px 0;
+            min-height: 100vh;
+           }
+         
+           .menu li:hover {
+            display: inline-block;
+            text-decoration: underline;
+            transition: 0.3s ease;
+           }
+           .menu li + li {
+            margin-top: 12px;
+           }
+           input[type=checkbox]:checked ~ .menu{
+            display: flex;
+            flex-direction: column;
+            z-index: 4;
+           }
+           .hamburger {
+            display: block;
+            color: white;
+           }
+           
+          .menu li{
+            position: relative;
+            top: 150px;
+            margin: auto;
+           }
+           .nav-links ul>li a{
+            font-size: 24px; 
+         }
+         .nav-links ul{
+            row-gap: 20px;
+         }
+          .nav-links{
+            text-align: right;
+          }
+   
+    nav{
+        padding: 6% 5%;
+        align-items: flex-start;
+       }
+       .logo{
+        width: 65%;
+       }
+
+       .container{
+        padding: 18% 5%;
+       }
+       .container p{
+        font-size: 32px;
+    }
+    .container img{
+        width: 80%;
+        height: auto;
+     }
+     .child{
+        width: 90%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        column-gap: 10px;
+    }
+    
+.child-item ul li:first-child{
+    font-size: 22px;
+    font-weight: 400;
+ }
+ .child-item ul li:nth-child(2){
+    opacity: 1;
+    font-size: 15px;
+ }
+ .child-item ul li:nth-child(3){
+     opacity: 1;
+     font-size: 15px;
+ }
+.mouse{
+    padding: 20%;
+}
+ .icons{
+    display: none;
+ }
+ .slider h1, h2{
+     font-size: 20px;
+ }
+.s hr{
+      width: 78%;
+ }
+ .s{
+       width: 90%;
+ }
+}
+
+
+/* Larger mobile devices (phones, 600px and down) */
+@media only screen and (min-width: 600px) and (max-width: 769px) {
+    body{
+        background-image: url(img/Meetup\ Header-UI\ UX\ Thinkthech.png);
+        background-color: #161735;
+        background-position: center right;
+        background-size: auto;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color:#4d4e79;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        min-height: 100vh;
+       }
+     
+       .menu li:hover {
+        display: inline-block;
+        text-decoration: underline;
+        transition: 0.3s ease;
+       }
+       .menu li + li {
+        margin-top: 12px;
+       }
+       input[type=checkbox]:checked ~ .menu{
+        display: flex;
+        flex-direction: column;
+        z-index: 4;
+       }
+       .hamburger {
+        display: block;
+        color: white;
+       }
+       
+      .menu li{
+        position: relative;
+        top: 250px;
+        margin: auto;
+       }
+       .nav-links ul>li a{
+        font-size: 24px; 
+     }
+     .nav-links ul{
+        row-gap: 20px;
+     }
+      .nav-links{
+        text-align: right;
+      }
+
+     nav{
+        padding: 6% 5%;
+        align-items: flex-start;
+       }
+       .logo{
+        width: 75%;
+       }
+
+       .container{
+        padding: 17% 5%;
+       }
+       .container p{
+        font-size: 36px;
+    }
+    .container img{
+        width: 70%;
+        height: auto;
+     }
+     .child{
+        width: 65%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    
+.child-item ul li:first-child{
+    font-size: 22px;
+    font-weight: 600;
+ }
+ .child-item ul li:nth-child(2){
+    opacity: 1;
+    font-size: 18px;
+ }
+ .child-item ul li:nth-child(3){
+     opacity: 1;
+     font-size: 18px;
+ }
+ .icons{
+    left: 92%;
+ }
+ .s{
+    width: 89%;
+ }
+ .s hr{
+    width: 65%;
+ }
+ .mouse{
+    padding: 8%;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 900px)  {
+  
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color:#4d4e79;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        min-height: 100vh;
+       }
+     
+       .menu li:hover {
+        display: inline-block;
+        text-decoration: underline;
+        transition: 0.3s ease;
+       }
+       .menu li + li {
+        margin-top: 12px;
+       }
+       input[type=checkbox]:checked ~ .menu{
+        display: flex;
+        flex-direction: column;
+        z-index: 4;
+       }
+       .hamburger {
+        display: block;
+        color: white;
+       }
+       
+      .menu li{
+        position: relative;
+        top: 250px;
+        margin: auto;
+       }
+      
+       .nav-links ul>li a{
+        font-size: 24px; 
+     }
+     .nav-links ul{
+        row-gap: 20px;
+     }
+      .nav-links{
+        text-align: right;
+      }
+
+     nav{
+        padding: 6% 5%;
+       }
+       .logo{
+        width: 75%;
+       }
+
+       .container{
+        padding: 16% 5%;
+       }
+       .container img{
+        width: 60%;
+        height: auto;
+     }
+     .child{
+        width: 55%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    
+.child-item ul li:first-child{
+    font-size: 22px;
+    font-weight: 600;
+ }
+ .child-item ul li:nth-child(2){
+    opacity: 1;
+    font-size: 16px;
+ }
+ .child-item ul li:nth-child(3){
+     opacity: 1;
+     font-size: 16px;
+ }
+ .s{
+    margin-top: -30px;
+    width: 85%;
+ }
+ .s hr{
+    width: 65%;
+ }
+ .mouse{
+  padding: 20%;
+ }
+} 
+
+
+
+/* Medium devices  */
+@media only screen and (min-width: 900px) and (max-width: 1300px)  {
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color:#4d4e79;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        min-height: 100vh;
+       }
+     
+       .menu li:hover {
+        display: inline-block;
+        text-decoration: underline;
+        transition: 0.3s ease;
+       }
+       .menu li + li {
+        margin-top: 12px;
+       }
+       input[type=checkbox]:checked ~ .menu{
+        display: flex;
+        flex-direction: column;
+        z-index: 4;
+       }
+       .hamburger {
+        display: block;
+        color: white;
+       }
+       
+      .menu li{
+        position: relative;
+        top: 250px;
+        margin: auto;
+       }
+      
+       .nav-links ul>li a{
+        font-size: 24px; 
+     }
+     .nav-links ul{
+        row-gap: 20px;
+     }
+      .nav-links{
+        text-align: right;
+      }
+     nav{
+        padding: 6% 10%;
+       }
+       .logo{
+        width: 75%;
+       }
+
+       .container{
+        padding: 7% 10%;
+       }
+       .container p{
+        font-size: 38px;
+       }
+       .container img{
+        width: 43%;
+        height: auto;
+     }
+     .child{
+        width: 55%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    
+.child-item ul li:first-child{
+    font-size: 24px;
+    font-weight: 300;
+ }
+ .child-item ul li:nth-child(2){
+    opacity: 1;
+    font-size: 16px;
+ }
+ .child-item ul li:nth-child(3){
+     opacity: 1;
+     font-size: 16px;
+ }
+ 
+ .s{
+    width: 85%;
+    padding-left: 3%;
+ }
+ .s hr{
+    width: 35%;
+ }
+ .mouse{
+    padding-top: 15%;
+   }
+} 
+
+
+
+/* Larger devices  */
+@media only screen and (min-width: 1300px) and (max-width: 1670px)  {
+    nav{
+        margin-left: -10px;
+    }
+    .container{
+        padding: 7% 10%;
+       }
+       .container p{
+        font-size: 38px;
+       }
+       .container img{
+        width: 32%;
+        height: auto;
+     }
+     .child{
+        width: 35%;
+        column-gap: 15px;
+    }
+    .s{
+        width: 85%;
+        padding-left: 3%;
+     }
+
+}

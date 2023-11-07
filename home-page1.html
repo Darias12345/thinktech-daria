@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think Tech</title>
+    <link rel="stylesheet" href="css/home-page 1.css">
+    <link href="https://www.dafontfree.net/embed/Z29yZGl0YXMtcmVndWxhciZkYXRhLzE2L2cvNzY1MjcvR29yZGl0YXMtUmVndWxhci50dGY" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+</head>   
+
+<body>
+
+<!-----navigation bar-->
+   <section class="header">
+      <nav> 
+        <div class="overlay"></div>
+        <a href="home-page1.html"><img class="logo" src="img/thinkTech.png"></a>
+        <div class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <ul class="menu">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="events-1.html">Events</a></li>
+                <li><a href="section2.html">Our Partners</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="signup ">
+          <ul class="menu">
+            <li><a href="">Sign Up</a></li>
+            <li><a href=""><button id="button">Login</button></a></li>
+          </ul>
+       </div>
+        </div>
+      </nav>
+
+
+      <div class="icons">
+        <div class="facebook">
+          <a href=""><img src="img/Component 7 – 7.png"></a>
+        </div>
+        <div class="facebook">
+          <a href=""><img src="img/Component 8 – 7.png"></a>
+        </div>
+        <div class="facebook">
+          <a href=""><img src="img/Component 9 – 7.png"></a>
+        </div>
+      </div>
+   </div>
+
+      <div class="container">
+        <img src="img/thinkTech@2x.png">
+        <p>30 September 2021</p>
+             <div class="child">
+              <div class="child-item  first">              
+                <ul>     
+                  <li>WHERE</li>
+                  <li>Fort Manson Center</li>
+                  <li>San Francisco,CA</li>
+                </ul>  
+              </div>
+              
+              <div class="child-item second">              
+                <ul>     
+                  <li>WHEN</li>
+                  <li>Sunday to Wednesday</li> 
+                  <li>July 23 to 26, 2017</li> 
+                </ul>  
+              </div>
+            </div>
+            <button id="button"><a href="view- speakers.html" class="bi">View Speakers</button></a>
+           </div>
+  </div>
+
+        
+
+     <div class="s">
+      <div class="slider">             
+        <h2><i>01.</i></h2>
+        <h1>Thinkthech</h1>  
+        <hr>
+      </div>
+      <div class="slider">               
+        <h2><i>03.</i></h2>
+        <h1>React Meetup</h1>
+        <hr>
+      </div>
+      <div class="slider">              
+        <h2><i>02.</i></h2>
+        <h1>Hackathon</h1> 
+        <hr>
+      </div>
+     </div>
+
+     
+      <div class="mouse">
+        <img src="img/mouse.png">
+       </div>
+ 
+   </section>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+   <script type="text/javascript">
+    $('.s').slick({
+     dots: false,
+     infinite: true,
+     speed: 300,
+     autoplay: true,
+     autoplaySpeed: 1500,
+     arrows: false,
+     slidesToShow: 2,
+     slidesToScroll: 2,
+     responsive: [
+       {
+         breakpoint: 768,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2,
+         }
+       },
+       {
+         breakpoint: 520,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2,
+         }
+       },
+     ]
+   });
+   </script>
+
+
+      <script type="text/javascript">
+          document.getElementById("#button").addEventListener("click", function(){
+          document.querySelector(".bg").styleDisplay="flex";
+      });
+      document.querySelector(".close").addEventListener("click", function(){
+          document.querySelector(".bg").styleDisplay="none";
+      });
+    </script>
+
+  
+</body>  
+</html> 
+ 
+
+   
+ 
